@@ -1,0 +1,30 @@
+h1{
+    background-color: cornflowerblue;
+    width: 100%;    
+}
+
+body{
+    background-color: grey;
+}
+
+#words{
+    width: 500px;
+
+    height: 100px;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 10%;
+    background-color: lightsteelblue;
+  
+}
+
+
+input{
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 30px;
+    background-color: lightseagreen;
+
+}   
