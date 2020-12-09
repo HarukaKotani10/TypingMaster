@@ -15,15 +15,16 @@
   </header>
 
   <div id="words">
-        <p>random words here random words here random words 
-            here random words here random words here random 
-            words here random words here random words here 
-            random words here random words here random words here 
+        <p>
+
 
         </p>
 
   </div>
- 
+
+  <input type="file" name="inputfile"
+  id="inputfile"> 
+<br> 
 
   <div id="typeHere">
 
@@ -37,5 +38,19 @@
       <p>Created by @Haruka_Kotani</p>
    
   </footer>
+
+  <script type="text/javascript"> 
+    document.getElementById('inputfile') 
+        .addEventListener('change', function() { 
+          
+        var fr=new FileReader(); 
+        fr.onload=function(){ 
+            document.getElementById('words') 
+                    .textContent=fr.result; 
+        } 
+          
+        fr.readAsText(this.files[0]); 
+    }) 
+</script> 
 </body>
 </html>

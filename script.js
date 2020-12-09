@@ -1,14 +1,11 @@
 
-var $ = function(id){
-    return document.getElementById(id);
-}
-
-let textarea = $("words");
-
-const input = 'input.txt';
-const reader = new FileReader();
-reader.onload = function(){
-    console.log(reader.result)
-}
-
-reader.readAsText(input);
+document.getElementById('inputfile') 
+.addEventListener('change', function() { 
+  
+var fr=new FileReader(); 
+fr.onload=function(){ 
+    document.getElementById('output') 
+            .textContent=fr.result; 
+} 
+  
+fr.readAsText(this.files[0]); }) 
